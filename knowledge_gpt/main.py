@@ -26,8 +26,8 @@ MODEL_LIST = ["gpt-3.5-turbo", "gpt-4"]
 # Uncomment to enable debug mode
 # MODEL_LIST.insert(0, "debug")
 
-st.set_page_config(page_title="KnowledgeGPT", page_icon="📖", layout="wide")
-st.header("📖KnowledgeGPT")
+st.set_page_config(page_title="ASKPDF", page_icon="📖", layout="wide")
+st.header("📖ASKPDF")
 
 # Enable caching for expensive functions
 bootstrap_caching()
@@ -38,10 +38,10 @@ openai_api_key = st.session_state.get("OPENAI_API_KEY")
 
 
 if not openai_api_key:
-    st.warning(
-        "Enter your OpenAI API key in the sidebar. You can get a key at"
-        " https://platform.openai.com/account/api-keys."
-    )
+    # st.warning(
+    #     "Enter your OpenAI API key in the sidebar. You can get a key at"
+    #     " https://platform.openai.com/account/api-keys."
+    # )
 
 
 uploaded_file = st.file_uploader(
